@@ -1,0 +1,133 @@
+{{define "base"}}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{{.Title}}</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/assets/stats.v1/css/styles.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 light">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-play-circle-o bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Server Up Time</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.ActiveTimes}}</span>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 blue">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-cogs bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Total Request Count</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.Requests}}</span>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 dblue">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-heartbeat bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Average Response Time</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.AverageResponse}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 blue">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-jsfiddle bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Longest Response Time</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.LongestRequest}}</span>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 dblue">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-cloud-upload bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Total GET Requests</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.GetRequests}}</span>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 light">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-envelope bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Total POST Requests</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.PostRequests}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 dblue">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-check bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Total 200 Responses</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.HTTP200}}</span>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 light">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-close bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Total 404 Responses</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.HTTP404}}</span>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 blue">
+    				<div class="row" style="height:50%;">
+    					<i class="fa fa-ambulance bk-icon"></i>
+    				</div>
+    				<div class="row" style="height:25%">
+    					<span class="info-text-title"><b>Total 500 Responses</b></span>
+    				</div>
+    				<div class="row" style="height:25%">
+						<span class="info-text">{{.HTTP500}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="row long">
+				<div class="col-md-12 light">
+					10
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+   		<script src="/assets/js/jquery.min.js"> </script>
+   		<script src="/assets/js/bootstrap.min.js"> </script>
+   		<script>
+   		setTimeout( function(){ window.location.reload( 1 );}, 10000 );
+   		</script>
+	</body>
+</html>
+{{end}}

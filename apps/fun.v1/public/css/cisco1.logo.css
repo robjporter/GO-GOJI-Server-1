@@ -1,0 +1,98 @@
+@-webkit-keyframes loading {
+  25% {
+    fill: #c6c7ca;
+  }
+  50% {
+    fill: #049fd9;
+  }
+  75% {
+    fill: #c6c7ca;
+  }
+}
+@keyframes loading {
+  25% {
+    fill: #c6c7ca;
+  }
+  50% {
+    fill: #049fd9;
+  }
+  75% {
+    fill: #c6c7ca;
+  }
+}
+html {
+  height: 100%;
+  background: #f3f3f3;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  height: 100%;
+}
+
+.logo {
+  width: 180px;
+  fill: #c6c7ca;
+}
+
+.logo__mark > g path {
+  -webkit-animation: loading 1.25s ease-in-out infinite reverse;
+          animation: loading 1.25s ease-in-out infinite reverse;
+}
+
+.logo__mark > g:nth-child(1) path {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.logo__mark > g:nth-child(2) path {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.logo__mark > g:nth-child(3) path {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.logo__mark > g:nth-child(4) path {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.logo__mark > g:nth-child(5) path {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.logo__mark > g:nth-child(6) path {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.logo__mark > g:nth-child(7) path {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.logo__mark > g:nth-child(8) path {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.logo__mark > g:nth-child(9) path {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}

@@ -1,0 +1,251 @@
+.container{
+	width: 800px;
+	height: 515px;
+	margin: 50px auto;
+}
+.github-rosto{
+	width: 448px;
+    height: 338px;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 30%/50%;
+    position: relative;
+}
+/*CABEÇA*/
+.github-rosto:after{
+	content: "";
+    width: 371px;
+    height: 177px;
+    position: absolute;
+    left: 39px;
+    z-index: 2;
+    top: -16px;
+    background-color: #000;
+    border-radius: 50%;
+}
+/*QUEIXO*/
+.github-rosto:before {
+    content: "";
+    width: 286px;
+    height: 50px;
+    position: absolute;
+    left: 80px;
+    z-index: 1;
+    top: 295px;
+    background-color: #000;
+    border-radius: 50%;
+}
+/*ORELHAS*/
+.github-orelha{
+	width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: 1;
+    background: #000;
+    border-radius: 150px 0;
+}
+/*ORELHA ESQUERDA*/
+.orelha-esquerda{
+    transform: rotate(90deg);
+    top: -40px;
+}
+/*ORELHA DIREITA*/
+.orelha-direita{
+    transform: rotate(180deg);
+    top: -40px;
+    right: 0px;
+}
+/*FUNDO OLHOS*/
+.github-olhos {
+    width: 336px;
+    height: 161px;
+    position: absolute;
+    z-index: 2;
+    background-color: #f4cab1;
+    border-radius: 20% / 50%;
+    top: 152px;
+    left: 56px;
+}
+/*PARTE REDONDA DE BAIXO*/
+.github-olhos:before {
+    content: "";
+    width: 297px;
+    height: 100px;
+    position: absolute;
+    left: 18px;
+    z-index: 3;
+    bottom: -18px;
+    background-color: #f4cab1;
+    border-radius: 50%;
+}
+/*OLHO*/
+.olhos{
+	width: 74px;
+    height: 111px;
+    position: absolute;
+    z-index: 3;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+/*PARTE INTERNA DO OLHO*/
+.olhos:after{
+	content: "";
+    width: 47px;
+    height: 68px;
+    position: absolute;
+    z-index: 3;
+    top: 27px;
+    left: 17px;
+    background-color: #a95d4f;
+    border-radius: 50%;
+}
+/*IRIS DO OLHO*/
+.olhos:before{
+	content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    z-index: 4;
+    top: 39px;
+    left: 24px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+/*OLHO ESQUERO*/
+.olho-esquerdo {
+    top: 26px;
+    left: 42px;
+}
+/*OLHO direito*/
+.olho-direito {
+    top: 26px;
+    right: 42px;
+}
+/*NARIZ*/
+.github-nariz{
+	width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 5;
+    bottom: 19px;
+    left: 158px;
+    border-radius: 50%;
+    background-color: #a95d4f;
+}
+/*BOCA*/
+.github-boca{
+	width: 40px;
+    height: 25px;
+    position: absolute;
+    z-index: 3;
+    bottom: -5px;
+    left: 148px;
+    border-radius: 50%;
+    background-color: #a95d4f;
+    -webkit-animation:efeitoBoca 8s 2s ease-in-out;
+}
+/*PARTE DE CIMA DA BOCA*/
+.github-boca:after{
+	content: "";
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    z-index: 4;
+    bottom: 6px;
+    border-radius: 50%;
+    background-color: #f4cab1;
+    -webkit-animation:efeitoBocaCima 9s 2s ease-in-out;
+}
+
+.github-arco-iris{
+    width: 158px;
+    height: 200px;
+    position: absolute;
+    z-index: 5;
+    left: 87px;
+    bottom: -200px;
+}
+.arco-iris-in{
+    width: 26px;
+    float: left;
+    -webkit-animation:efeitoArcoIris 5s 4s ease-in-out;
+}
+.arco-vermelho{
+    background: #e90000;
+}
+.arco-laranja{
+    background: #fb8d00;
+}
+.arco-amarelo{
+    background: #f8f900;
+}
+.arco-verde{
+    background: #8df80b;
+}
+.arco-azul{
+    background: #018ab9;
+}
+.arco-roxo{
+    background: #7a02ff;
+}
+.github-bigode{
+	width: 160px;
+    height: 13px;
+    position: absolute;
+    z-index: 2;
+    background-color: #000;
+    border-radius: 50%;
+}
+.github-bigode:before {
+    width: 160px;
+    height: 10px;
+    content: "";
+    background: #FFF;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+}
+.bigode-esquerdo-cima{
+	left: -147px;
+    bottom: 86px;
+    transform: rotate(-5deg);    
+}
+.bigode-esquerdo-baixo{
+	left: -141px;
+    bottom: 66px;
+    transform: rotate(-10deg);  
+}
+.bigode-direito-cima{
+	right: -146px;
+    bottom: 86px;
+    transform: rotate(5deg);  
+}
+.bigode-direito-baixo{
+	right: -140px;
+    bottom: 66px;
+    transform: rotate(10deg);  
+}
+.code{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10000;
+    bottom: 0px;
+}
+.code a{
+    width: auto;
+    float: right;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    text-align: center;
+    font-family: Arial;
+    color: #FFF;
+    text-decoration: none;
+}
+.code a:hover{
+    background-color: #357ebd;
+    border-color: #428bca;
+    
+}

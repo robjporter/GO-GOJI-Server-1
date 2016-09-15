@@ -1,0 +1,96 @@
+html, body, .container-fluid {
+    height:100%;
+}
+.dblue{
+    text-align: center;
+    background-color: #084c8d;
+    height: 100%;
+}
+.blue{
+    text-align: center;
+    background-color: #6682b5;
+    height: 100%;
+}
+.light{
+    text-align: center;
+    background-color: #d5d5e5;
+    height: 100%;
+}
+
+.row {
+	height:28%;
+}
+.row.long {
+	height: 16%;
+}
+.bk-icon {
+    font-size: 15vh;
+    left: 0px;
+    color: #cfcfcf;
+}
+.info-text-title {
+	font-size: 3vh;
+}
+.info-text {
+	font-size: 4vh;
+}
+.bk-lblue {
+    text-align: center;
+    background-color: #50ABF1;
+    height: 100%;
+    color: white;
+}
+.bk-lred {
+    text-align: center;
+    background-color: #DE4D3B;
+    height: 100%;
+    color: white;
+}
+.bk-blue {
+    text-align: center;
+    background-color: #39579A;
+    height: 100%;
+    color: white;
+}
+.bk-pink {
+    text-align: center;
+    background-color: #EC4989;
+    height: 100%;
+    color: white;
+}
+.bk-black {
+    text-align: center;
+    background-color: #162221;
+    height: 100%;
+    color: white;
+}
+.bk-lgreen {
+    text-align: center;
+    background-color: #CFDE00;
+    height: 100%;
+    color: white;
+}
+.bk-green {
+    text-align: center;
+    background-color: #A3C829;
+    height: 100%;
+    color: white;
+}
+.bk-purple {
+    text-align: center;
+    background-color: #410096;
+    height: 100%;
+    color: white;
+}
+.bk-orange {
+    text-align: center;
+    background-color: #F46508;
+    height: 100%;
+    color: white;
+}
+.bk-red {
+    text-align: center;
+    background-color: #CF1D13;
+    height: 100%;
+    color: white;
+}

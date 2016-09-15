@@ -1,0 +1,53 @@
+{
+	"secret": "secret",
+	"public_path": "./public",
+	"plugin_path": "./apps",
+	"template_path": "./views",
+	"style": "style1",
+	"development": true,
+	"debug": true,
+	"database": {
+		"hosts": "localhost",
+		"database": "myFirstProject",
+		"type": "mongo",
+		"name": "myapi",
+		"ledis" : {
+			"path": "data/ledis",
+			"count": 16,
+			"backend": "goleveldb",
+			"readbuffer": 10240,
+			"writebuffer": 10240
+		},
+		"bolt" : {
+			"path": "data"
+		},
+		"mongo" : {
+			"monotonic": true,
+			"name": "myapi",
+			"users": "users"
+		}
+	},
+	"server": {
+		"cdn": "local"
+	},
+	"admin": {
+		"email": "",
+		"password": "",
+		"scopes": [ "ADMIN", "IMPERSO" ]
+	},
+	"certificate": {
+		"Private": "keys/app.rsa",
+		"Public": "keys/app.rsa.pub",
+		"Certificate": "keys/cert.pem",
+		"CertKey": "keys/key.pem",
+		"Timeout": "60",
+		"Signing": "RS256"
+	},
+	"host": {
+		"port": "3000",
+		"https": true
+	},
+	"stats": {
+		"threshold": 500
+	}
+}
